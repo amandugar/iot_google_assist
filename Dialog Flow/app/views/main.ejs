@@ -1,0 +1,42 @@
+<%- include("partials/head") %>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="mt-5 mb-5 text-center">Device Control</h1>
+                <h3>
+                    Light
+                </h3>
+                <button type="button" class="btn btn-lg btn-success" onclick="sendData('light','on')">On</button>
+                <button type="button" class="btn btn-lg btn-danger" onclick="sendData('light','off')">Off</button>
+                <br>
+                <br>
+                <h3>
+                    Fan
+                </h3>
+                <button type="button" class="btn btn-lg btn-success" onclick="sendData('fan','on')">On</button>
+                <button type="button" class="btn btn-lg btn-danger" onclick="sendData('fan','off')">Off</button>
+            </div>
+            <div class="col-md-4">
+                <h1 class="text-center mt-5">
+                    Temperature
+                </h1>
+                <br>
+                <br>
+
+                <h3 class="text-center mb-5 pb-5">
+                    <span id = "temperatureValue">28</span> <sup><sup>.</sup></sup>C
+                </h3>
+            </div>
+            <div class="col-md-4 mt-5">
+                <h1 class="text-center">
+                    Humidity
+                </h1>
+                <br>
+                <br>
+                <h3 class="text-center mb-5 pb-5">
+                    <span id = "humidityValue">28</span>%
+                </h3>
+            </div>
+        </div>
+    </div>
+<%- include("partials/footer") %>
